@@ -47,12 +47,12 @@ let s:last_words = ":"
 let s:save_cpo = &cpo
 set cpo&vim
 
-nnoremap <silent> <tab>  :<C-U>call <SID>Match_wrapper('',1,'n') <CR>
-nnoremap <silent> <s-tab> :<C-U>call <SID>Match_wrapper('',0,'n') <CR>
-vnoremap <silent> <tab>  :<C-U>call <SID>Match_wrapper('',1,'v') <CR>m'gv``
-vnoremap <silent> <s-tab> :<C-U>call <SID>Match_wrapper('',0,'v') <CR>m'gv``
-onoremap <silent> <tab>  v:<C-U>call <SID>Match_wrapper('',1,'o') <CR>
-onoremap <silent> <s-tab> v:<C-U>call <SID>Match_wrapper('',0,'o') <CR>
+nnoremap <silent> <c-f1>  :<C-U>call <SID>Match_wrapper('',1,'n') <CR>
+nnoremap <silent> <s-f12> :<C-U>call <SID>Match_wrapper('',0,'n') <CR>
+vnoremap <silent> <c-f1>  :<C-U>call <SID>Match_wrapper('',1,'v') <CR>m'gv``
+vnoremap <silent> <s-f12> :<C-U>call <SID>Match_wrapper('',0,'v') <CR>m'gv``
+onoremap <silent> <c-f1>  v:<C-U>call <SID>Match_wrapper('',1,'o') <CR>
+onoremap <silent> <s-f12> v:<C-U>call <SID>Match_wrapper('',0,'o') <CR>
 
 " Analogues of [{ and ]} using matching patterns:
 "nnoremap <silent> [% :<C-U>call <SID>MultiMatch("bW", "n") <CR>
