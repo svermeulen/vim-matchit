@@ -49,8 +49,8 @@ set cpo&vim
 
 nnoremap <silent> <plug>MatchItForward/  :<C-U>call <SID>Match_wrapper('',1,'n') <CR>
 nnoremap <silent> <plug>MatchItBack/ :<C-U>call <SID>Match_wrapper('',0,'n') <CR>
-xnoremap <silent> <plug>MatchItForward/  :<C-U>call <SID>Match_wrapper('',1,'v') <CR>m'gv``
-xnoremap <silent> <plug>MatchItBack/ :<C-U>call <SID>Match_wrapper('',0,'v') <CR>m'gv``
+"xnoremap <silent> <plug>MatchItForward/  :<C-U>call <SID>Match_wrapper('',1,'v') <CR>m'gv``
+"xnoremap <silent> <plug>MatchItBack/ :<C-U>call <SID>Match_wrapper('',0,'v') <CR>m'gv``
 onoremap <silent> <plug>MatchItForward/  v:<C-U>call <SID>Match_wrapper('',1,'o') <CR>
 onoremap <silent> <plug>MatchItBack/ v:<C-U>call <SID>Match_wrapper('',0,'o') <CR>
 
